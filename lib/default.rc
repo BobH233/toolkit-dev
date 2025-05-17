@@ -26,6 +26,8 @@ GIT_BRIDGE_ENABLED=false
 GIT_BRIDGE_DATA_PATH=data/git-bridge
 GIT_BRIDGE_LOG_LEVEL=INFO
 
+GIT_REPO_TEMP_PATH=data/git-repo-temp-dir
+
 # TLS proxy configuration
 NGINX_ENABLED=false
 NGINX_IMAGE=nginx:1.19-alpine

@@ -65,6 +65,7 @@ function canonicalize_data_paths() {
   MONGO_DATA_PATH=$(cd "$TOOLKIT_ROOT"; realpath "$MONGO_DATA_PATH")
   REDIS_DATA_PATH=$(cd "$TOOLKIT_ROOT"; realpath "$REDIS_DATA_PATH")
   GIT_BRIDGE_DATA_PATH=$(cd "$TOOLKIT_ROOT"; realpath "$GIT_BRIDGE_DATA_PATH")
+  GIT_REPO_TEMP_PATH=$(cd "$TOOLKIT_ROOT"; realpath "$GIT_REPO_TEMP_PATH")
 }
 
 # Set environment variables for docker-compose.base.yml
@@ -143,6 +144,7 @@ function set_mongo_vars() {
   export MONGO_DATA_PATH
   export MONGO_DOCKER_IMAGE
   export MONGOSH
+  export GIT_REPO_TEMP_PATH
 }
 
 # Set environment variables for docker-compose.sibling-containers.yml
